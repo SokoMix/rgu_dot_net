@@ -123,9 +123,8 @@ internal static class Startup
                 IContainer container = new Container();
                 container.RegisterInstance(_modules);
                 container.RegisterInstance(hostBuilderContext.Configuration);
-                container = container
-                    .WithCompositionRoot<ServicesRegistration>()
-                    .WithCompositionRoot<ServiceRegistratorsCompositionRoot>();
+                container = container.WithCompositionRoot<ServicesRegistration>();
+                container = container.WithCompositionRoot<ServiceRegistratorsCompositionRoot>();
                 
                 var startups = container.ResolveMany<Core.IStartup>();
                 foreach (var startup in startups ?? Enumerable.Empty<Core.IStartup>())

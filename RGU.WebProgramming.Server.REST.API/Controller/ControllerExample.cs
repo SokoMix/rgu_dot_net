@@ -1,7 +1,6 @@
-﻿using ClassLibrary1;
-using DryIoc;
+﻿using DryIoc;
 using Microsoft.AspNetCore.Mvc;
-
+using RGU.WebProgramming.Server.DataProvider;
 using RGU.WebProgramming.Server.REST.Models;
 
 namespace RGU.WebProgramming.Server.REST.API.Controller;
@@ -23,8 +22,8 @@ public sealed class ControllerExample:
     /// </summary>
     private readonly ILogger<ControllerExample> _logger;
 
-    //private readonly IResolver _resolver;
-    
+    //private readonly DbContextFactory _dbContextFactory;
+
     #endregion
     
     #region Constructors
@@ -32,13 +31,14 @@ public sealed class ControllerExample:
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="resolver"></param>
+    /// <param name="dbContextFactory"></param>
     /// <param name="logger"></param>
     /// <exception cref="ArgumentNullException"></exception>
     public ControllerExample(
-        //IResolver resolver,
+        //DbContextFactory dbContextFactory,
         ILogger<ControllerExample> logger)
     {
+        //_dbContextFactory = dbContextFactory ?? throw new ArgumentNullException(nameof(dbContextFactory));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         //_resolver = resolver ?? throw new ArgumentNullException(nameof(resolver));
     }
@@ -58,6 +58,8 @@ public sealed class ControllerExample:
     {
         try
         {
+            //await using var dbContext = _dbContextFactory.Create();
+            
             _logger.LogInformation($"Got GET request");
 
             //

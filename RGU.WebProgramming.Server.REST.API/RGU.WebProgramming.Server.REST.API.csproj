@@ -13,6 +13,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\RGU.WebProgramming.Server.Core\RGU.WebProgramming.Server.Core.csproj" />
+      <ProjectReference Include="..\RGU.WebProgramming.Server.DataProvider\RGU.WebProgramming.Server.DataProvider.csproj" />
       <ProjectReference Include="..\RGU.WebProgramming.Server.PostgresStorage\RGU.WebProgramming.Server.PostgresStorage.csproj" />
       <ProjectReference Include="..\RGU.WebProgramming.Server.REST.Models\RGU.WebProgramming.Server.REST.Models.csproj" />
     </ItemGroup>

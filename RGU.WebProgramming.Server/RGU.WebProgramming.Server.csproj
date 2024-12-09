@@ -29,6 +29,7 @@
         <ProjectReference Include="..\RGU.WebProgramming.Server.REST.API\RGU.WebProgramming.Server.REST.API.csproj" />
         <ProjectReference Include="..\RGU.WebProgramming.Server.REST.Models\RGU.WebProgramming.Server.REST.Models.csproj" />
         <ProjectReference Include="..\RGU.WebProgramming.Server.PostgresStorage\RGU.WebProgramming.Server.PostgresStorage.csproj" />
+        <ProjectReference Include="..\RGU.WebProgramming.Server.DataProvider\RGU.WebProgramming.Server.DataProvider.csproj" />
     </ItemGroup>
 
     <ItemGroup>

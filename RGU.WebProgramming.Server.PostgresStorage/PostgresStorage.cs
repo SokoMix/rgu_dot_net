@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using RGU.WebProgramming.Server.REST.Models;
 
-namespace ClassLibrary1;
+namespace RGU.WebProgramming.Server.PostgresStorage;
 
 public class PostgresStorage : DbContext
 {
