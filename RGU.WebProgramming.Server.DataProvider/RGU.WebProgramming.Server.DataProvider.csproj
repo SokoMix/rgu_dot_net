@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RGU.WebProgramming.Core\RGU.WebProgramming.Core.csproj" />
+      <ProjectReference Include="..\RGU.WebProgramming.Server.Core\RGU.WebProgramming.Server.Core.csproj" />
+      <ProjectReference Include="..\RGU.WebProgramming.Server.PostgresStorage\RGU.WebProgramming.Server.PostgresStorage.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DryIoc.dll" Version="5.4.3" />
+    </ItemGroup>
+
+</Project>
